@@ -1,16 +1,9 @@
+import lombok.Data;
 
-import java.io.*;
-import java.util.*;
-
-/**
- * 
- */
+@Data
 public class OrderItem {
-
-    /**
-     * Default constructor
-     */
-    public OrderItem() {
-    }
-
+    private final String itemId;
+    private final String orderId;
+    private final int quantity;
+    private final OrderItemType type;
 }
